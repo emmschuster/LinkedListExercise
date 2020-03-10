@@ -7,3 +7,9 @@ public class Elem {
 		this.zahl=i;
 	}
 }
+
+/*class Node:
+    def __init__(self, data = None):
+        self.data = int(data) if data is not None else None
+        self.next_node = None
+        */
