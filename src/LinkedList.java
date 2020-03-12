@@ -27,10 +27,20 @@ public class LinkedList {
 	}
 	
 	public void deleteElement (int i) {
-		//überprüfung ob index kleiner 0 oder länger als es überhaupt gibt also not länger getlenght
-		//wenn es neu ist dann head=head.adress;
 		Elem dElem=head;
 		Elem lastElem=null;
+		if (i==0) {
+			head=head.adress;
+			return;
+		}
+		if (i<0) {
+			System.out.println("negative numbers aren't allowed");
+			return;
+		}
+		if (i>getlenghtList()) {
+			System.out.println("number is bigger than the List is long");
+			return;
+		}
 		while(i>0) {
 			lastElem=dElem;
 			dElem=dElem.adress;
