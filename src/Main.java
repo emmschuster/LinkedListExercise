@@ -2,21 +2,18 @@ public class Main {
 
 	public static void main(String[] args) {
 		System.out.println("Linked Lists");
-		LinkedList l = new LinkedList(5);
+		LinkedList l = new LinkedList(5);	//erste selement is der head
+		l.addElement(10);
+		l.addElement(15);
+		l.addElement(20);
+		l.addElement(25);
+		System.out.println("Lenghts: "+l.getlenghtList());
+		System.out.println("Print List:");	//und deleten noch
+		l.printList();
+		System.out.println("\n3. Element wird gelöscht : ");
+		l.deleteElement(2);
+		System.out.println("Jetzige Länge: "+l.getlenghtList());
+		l.printList();
 	}
 
 }
-
-/*linked_list = SinglyLinkedList()
-
-linked_list.head = Node(5)
-
-linked_list.add_node_at_beginning(2)
-linked_list.add_node_at_end(9)
-
-linked_list.delete_item_from_list(2)
-
-linked_list.print_list()
-
-print(linked_list.get_list_length())
-*/
