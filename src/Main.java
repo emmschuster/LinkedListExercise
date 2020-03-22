@@ -7,12 +7,13 @@ public class Main {
 		l.addElement(15);
 		l.addElement(20);
 		l.addElement(25);
-		System.out.println("Lenghts: "+l.getlenghtList());
-		System.out.println("Print List:");	//und deleten noch
+		System.out.println("Länge der Liste:"+l.getlenghtList());
 		l.printList();
-		System.out.println("\n3. Element wird gelöscht : ");
-		l.deleteElement(2);
-		System.out.println("Jetzige Länge: "+l.getlenghtList());
+		l.deleteElement(3);
+		System.out.println("Länge der Liste:"+l.getlenghtList());
+		l.printList();
+		l.addElement(55);
+		System.out.println("Länge der Liste:"+l.getlenghtList());
 		l.printList();
 	}
 
