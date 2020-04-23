@@ -5,7 +5,7 @@ public class LinkedList {
 	}
 	public void printList() {
 		Elem headJetzt = this.head;
-		while (headJetzt.adress != null) {
+		while (headJetzt != null) {
 			System.out.println(headJetzt.zahl+"	"+headJetzt.adress);
 			headJetzt=headJetzt.adress;
 		}
